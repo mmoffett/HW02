@@ -90,8 +90,19 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
-	// Complete the rest of this function 
-	
+	string name;
+	cout << "Enter name: ";
+	getline(cin, name);
+	string result = the_directory.remove_entry;
+	if (result == "")
+	{
+		cout << name << " was not in the directory\n";
+	}
+	else
+	{
+		cout << name << " with number " << result << " is no longer in the directory\n";
+		//There is still a question relating back to what the remove_entry function returns that could affect this
+	}	
 }
 
 void do_save(Phone_Directory& the_directory)
